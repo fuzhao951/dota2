@@ -1,0 +1,395 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    min-width: 1337px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 12px;
+    background-color: #000 !important;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    position: relative;
+    overflow-x: hidden;
+    max-width: 1920px;
+}
+nav>ul{
+    height:73px;
+    width:1220px;
+    display: block;
+    margin:0 auto;
+    list-style:none;
+    /* position:absolute; */
+    
+}
+nav>ul>li{
+    position: relative;
+    width: 128px;
+    float: left;
+    margin:0 auto;
+    text-align: center;
+    margin-left: 58px;
+    padding-top: 55px;
+    padding-bottom: 2px;
+    
+}
+nav>ul>li:nth-child(4){
+    margin-left:220px;
+}
+nav>ul>li:nth-child(1){
+    margin-left:0;
+}
+nav>ul>li>a{
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 100%;
+    position: relative;
+}
+nav li a:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 100%;
+    height: 3px;
+    background-color: #7049cb;
+    z-index: -1;
+}
+header{
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.dota-logo{
+    position: absolute;
+    top: 23px;
+    left: 50%;
+    width: 189px;
+    height: 83px;
+    background-image: url(../image/dota2-logo.png);
+    margin-left: -94.5px;
+    overflow: hidden;
+    z-index: 3;
+}
+.banner{
+    width: 1920px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: -11;
+}
+.power{
+    position: relative;
+    width:1000px;
+    height:500px;
+    left:15%;
+    top:115px;
+}
+.power>span:first-child{
+    width:351px;
+    height: 24px;
+    background:url("../image/bonus-pools-bg.png");
+    position: absolute;
+    left:37%;
+}
+.power>p.money{
+    display: block;
+    position: absolute;
+    color:white;
+    font-size:68px;
+    font-family: RADIANCEM;
+    height: 100%;
+    text-shadow: 0 6px 15px #000;
+    letter-spacing: 6px;
+    left:33%;
+    top:40px;
+}
+.power:hover>.playbtn{
+    opacity: 1;
+}
+.power>.playbtn{
+    opacity: 0;
+    width:90px;
+    height:90px;
+    border:none;
+    background:url(../image/play-btn.png);
+    position: absolute;
+    top:249px;
+    left:48%;
+    outline: none;
+    transition: all 0.3s;
+}
+.screen{
+    display: block;
+    position: relative;
+    height:100%;
+    width:100%;
+    background-color:rgba(0,0,0,1);
+    z-index: 9;
+}
+.contain{
+    position: relative;
+    height:637px;
+}
+.contain>.buxiu{
+    position:absolute;
+    width:730px;
+    height:235px;
+    background:url("../image/layer3.png");
+    z-index: 20;
+    left:380px;
+    margin-top:107px;
+
+}
+.contain>.mask{
+    text-align: center;
+}
+.contain>.mask>ul{
+    margin:0 auto;
+    display: inline-block;
+    position: relative;
+    z-index: 21;
+    top:395px;
+}
+.contain>.mask>ul:after{
+    content:"";
+    display: block;
+    clear:left;
+}
+.contain>.mask>ul>li{
+    position: relative;
+    float: left;
+    margin:0 50px;
+}
+.contain>.mask>ul>li>div{
+    position: relative;
+    transition:all 0.5s linear;
+}
+.contain>.mask>ul>li>div>a>img{
+    position: relative;
+    top:36px;
+    left:13px;
+}
+.contain>.mask span{
+    position: relative;
+    font-size: 18px;
+    color:#8b64cd;
+    top:34px;
+    left:13px;
+    opacity:0;
+    z-index: 999;
+    transition: all 0.5s linear;
+}
+.contain>.mask>ul>li:first-child>div>a>div{
+    position: absolute;
+    display: block;
+    width:366px;
+    height: 244px;
+    background: url("../image/border-tip.png") no-repeat;
+    top:0px;
+    left:-18px;
+    z-index: 999;
+    
+} 
+.contain>.mask>ul>li:nth-child(2)>div>a>div{
+    position: absolute;
+    display: block;
+    width:366px;
+    height: 244px;
+    background: url("../image/border-tip.png") no-repeat;
+    background-position: -429px 0;
+    top:0;
+    left:-18px;
+    z-index: 999;    
+}
+.contain>.mask>ul>li:nth-child(3)>div>a>div{
+    position: absolute;
+    display: block;
+    width:366px;
+    height: 244px;
+    background: url("../image/border-tip.png") no-repeat;
+    background-position: -429px 0;
+    top:0;
+    left:-18px;
+    z-index: 999;    
+} 
+.contain>.mask>ul>li:hover>div{
+    transform: translateY(-22px);
+}
+.contain>.mask>ul>li:hover>span{  
+    opacity: 1;
+}
+.contain>.mask-footer{
+    background: url("../image/contain1.png") no-repeat center top;
+    position: absolute;
+    bottom: -142px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 301px;
+    z-index: 3;
+    top:477px;
+}
+/* section */
+section{
+    position: relative;
+    background:url("../image/section1.jpg");
+    height:1955px;
+}
+section>.main-header{
+    position: relative;
+    height:237px;
+    margin-bottom: 20px;
+}
+section>.main-header>h1{
+    display: block;
+    height:207px;
+    width:100%;
+    background:url("../image/main-tit.png") no-repeat center;
+    position: absolute;
+    z-index: 4;
+    text-align: center;
+}
+section>.main-header>div.teasure{
+    position: relative; 
+    text-align: center;
+    top:210px;
+  
+    z-index:4;
+}
+section>.main-header>div.teasure>a{
+    color:#666666;
+    font-size:18px;
+    letter-spacing: 2px;
+    margin:0 21px;
+}
+section>.main-header>div.teasure>a.active{
+    color:#fff;
+}
+section>.main-body{
+    background:url("../image/flower.png") no-repeat right;
+    background-position-y:-83px;
+}
+section>.main-body>p{
+    color:#8f69d4;
+    font-size:18px;
+    text-align: center;
+}
+.outsc{
+    width:1423px;
+    height:776px;
+    /* margin-top:50px; */
+    overflow: hidden;
+    margin:50px auto;
+  
+}
+.outsc>.insc{
+    width:21120px;
+    display: flex;
+    height:100%;
+    margin-left:0px;
+    justify-content: space-between;
+    transition: all 0.3s linear;
+}
+.outsc>.insc>.videoall{
+    /* height:100%; */
+    width:1920px;
+    position: relative;
+    float:left;
+}
+.outsc>.insc .thisvideo{  
+    width:1000px;
+    height:500px;
+    margin-left:210px;
+}
+.outsc>.insc .videoall>img{
+    position: absolute;
+    left:-292px;
+    top:-11px;
+    z-index: 999;
+}
+ul.herobtn{
+    width:1500px;
+    margin:0 auto;
+    position: relative;
+    top:-50px;
+    list-style: none;
+}
+ul.herobtn>li{
+    float: left;
+    transition: all 0.3s;
+}
+ul.herobtn>li>a>span{
+    display: inline-block;
+    background:url("../image/allhero.png") no-repeat;
+    background-position:-35px 0;
+    width:145px;
+    height:258px;
+}
+ul.herobtn>li:nth-child(2)>a>span{
+    background-position:-175px 0;
+    width:103px;
+}
+ul.herobtn>li:nth-child(3)>a>span{
+    background-position:-280px 0;
+    width:109px;
+}
+ul.herobtn>li:nth-child(4)>a>span{
+    background-position:-385px 0;
+    width:156px;
+}
+ul.herobtn>li:nth-child(5)>a>span{
+    background-position:-545px 0;
+    width:136px;
+}
+ul.herobtn>li:nth-child(6)>a>span{
+    background-position:-680px 0;
+    width:108px;
+}
+ul.herobtn>li:nth-child(7)>a>span{
+    background-position:-780px 0;
+    width:152px;
+    margin-left:-16px;
+}
+ul.herobtn>li:nth-child(8)>a>span{
+    background-position:-935px 0;
+    width:116px; 
+}
+ul.herobtn>li:nth-child(9)>a>span{
+    background-position:-1050px 0;
+    width:174px; 
+}
+ul.herobtn>li:nth-child(10)>a>span{
+    background-position:-1225px 0;
+    width:157px; 
+}
+ul.herobtn>li:nth-child(11)>a>span{
+    background-position:-1390px 0;
+    width:154px; 
+}
+.transtop{
+    transform: translateY(-30px);
+}
+.videoall>.name{
+    position: absolute;
+    display:inline-block;
+    color:#fff;
+    font-size:24px;
+    top:527px;
+    left:34%;
+}
+.videoall>.info{
+    color:#8f69d4;
+    font-size:18px;
+    position: absolute;
+    display:inline-block;
+    top:569px;
+    left:29%;
+}

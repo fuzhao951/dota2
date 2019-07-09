@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOTA2</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="icon" href="image/favicon.ico">
+</head>
+<body>
+	<div id="loginindex">
+		<div>
+			<a href="javascript:loginindex()"><div class="close"></div></a>
+			<div class="loginname">
+				<i></i><input class="loginput" type="text" id="uname" placeholder="电子邮件地址/手机号">
+			</div>
+			<div class="loginupwd">	
+				<i></i><input class="loginput" type="password" id="upwd" placeholder="请输入您的密码"><br>
+			</div>
+			<div class="autologin"><i id="onf"></i><div onclick="ggsmd()"><input type="checkbox" id="remember"><i></i><span>自动登录</span></div></div>
+			<a href="#" class="forget">忘记密码?&nbsp;</a>
+			<button onclick="login()">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</button>	
+			<a href="reg.html" class="reg dotared">免费注册完美通行证账号</a>
+			<a href="#" class="find dotared">使用DOTA2账号找回完美通行证</a>
+		</div>
+	</div>
+	<header>
+		<div id="nav">
+			<a href="index.html" id="navlogo"></a>
+			  <div class="dota2nav">
+					<div class="link_div"> <a href="index.html"><span class="s1">首页</span><span class="s2" id="shouye">HOME</span>
+	
+					</a>			
+						<div>
+							<a href="main.html">品牌站</a>
+							<a href="#">个人中心</a>
+							<a href="#">神秘商店</a>
+							<a href="#">玩家工坊</a>
+						</div>
+					</div>
+					<div class="link_div"><a href="#"><span class="s1">资讯</span><span class="s2" id="zixun">NEWS</span></a>
+						<div>
+							<a href="#">官方新闻</a>
+							<a href="#">赛事新闻</a>
+							<a href="#">更新日志</a>
+							<a href="#">游戏攻略</a>
+						</div>
+					</div>
+					<div class="link_div"><a href="#"><span class="s1">赛事</span><span class="s2" id="saishi">TOURNAMENTS</span></a>
+						<div>
+							<a href="#">职业赛季</a>
+							<a href="#">赛事中心</a>
+							<a href="#">赛事总览</a>
+							<a href="#">赛事专题</a>
+						</div>
+					</div>
+					<div class="link_div"><a href="#"><span class="s1">互动</span><span class="s2" id="hudong">INTERACTION</span></a>
+						<div>
+							<a href="#">精彩综合</a>
+							<a href="#">官方活动</a>
+							<a href="#">官方论坛</a>
+							<a href="#">新浪微博</a>
+							<a href="#">官方微信</a>
+						</div>
+					</div>
+					<div class="link_div"><a href="#"><span class="s1">资料</span><span class="s2">DATA</span></a>
+						<div>
+							<a href="hero.html">英雄资料</a>
+							<a href="#">物品资料</a>
+							<a href="#">自定义地图</a>
+							<a href="#">新手引导</a>
+						</div>
+					</div>
+					<div class="link_div"><a href="#"><span class="s1">服务</span><span class="s2" id="fuwu">SERVICE</span></a>
+						<div>
+							<a href="#">客服中心</a>
+							<a href="#">在线客服</a>
+							<a href="#">自助专区</a>
+							<a href="#">被盗找回</a>
+							<a href="#">忘记账号</a>
+							<a href="#">通行证查询</a>
+							<a href="#">网吧特权</a>
+							<a href="#">家长监护</a>
+						</div>
+					</div>
+					<div class="link_div"><a href="#"><span class="s1">下载</span><span class="s2" id="xiazai">DOWNLOAD</span></a>
+						<div>
+							<a href="#">游戏下载</a>
+							<a href="#">精美壁纸</a>
+							<a href="#">官方漫画</a>
+						</div>
+					</div>
+			  </div>
+		  <div id="dotauser"> 
+				<div id="info"> 
+					<div id="avatars">
+					<i class="avatar"></i> 
+					</div>
+					<div id="enter"> 
+					</div> 
+				</div> 
+ 			</div> 
+		</div>
+	</header>
+	<div id="contain">
+		<div id="lunbo" class="ali1">
+			<div class="Carousel">
+				<a href="#"><div></div></a>
+				<a href="#"><div></div></a>
+				<a href="#"><div></div></a>
+				<a href="#"><div></div></a>
+				<a href="#"><div></div></a>
+			</div>
+			<div class="arrow">
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+			</div>
+			<ul id="Carouseldo" class="lb1">
+				<li><a></a></li>
+				<li><a></a></li>
+				<li><a></a></li>
+				<li><a></a></li>
+			</ul>
+		</div>
+		<div id="anybotton">
+			<div id="u_left_box">
+				<a href="#" class="u_left_box_botton">
+					<span></span>
+				</a>
+				<a href="#" class="u_left_box_botton">
+					<span></span>
+				</a>
+				<a href="#" class="u_left_box_botton">
+					<span></span>
+				</a>
+			</div>
+			<div>
+				<a href="#" class="u_left_box_botton">
+					<span></span>
+				</a>
+				<a href="#" class="u_left_box_botton">
+					<span></span>
+				</a>
+			</div>
+			<div id="u_right_box">
+				<a href="#" class="u_right_box_botton">
+					<span></span>
+				</a>
+				<a href="#" class="u_right_box_botton">
+					<span></span>
+				</a>
+				<a href="#" class="u_right_box_botton">
+					<span></span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="contain_center">
+		<div class="u_news_section">
+			<div class="u_news_title">
+				<i id="u_news_pt"></i>
+				<span>新闻中心</span>
+				<a href="#" class="more">
+				<span>更多</span>
+				<div class="right_icons"></div>
+				</a>
+			</div>
+			<div class="u_news_content">
+				<ul class="u_tabs">
+					<li class="u_tab u_active">综合新闻</li>
+					<li class="u_tab">官方新闻</li>
+					<li class="u_tab">赛事新闻</li>
+					<li class="u_tab">更新日志</li>
+				</ul>
+				<ul class="u_panels">
+					<li class="u_panel u_active">
+						<div	class="u_lists">
+							<a href="#">
+								<h3>英雄修炼渐近尾声 冲击排名争TI9门票</h3>
+								<div class="u_contents">
+									<div class="u_item_avatar"><img src="image/heroroad.jpg" alt=""></div>
+								</div>
+								<p> 刀塔PLUS一周年活动英雄修炼之路将于4月21日（本周日）结束。自活动开启以来，众多玩家一路收集圣物，达成了许多成就；而各位玩家在遗迹间的辉煌战果，也变成了名下的圣物结晶。如今，活动已近尾声，一个月的修行，又取得了什么样的成果呢？快开启英雄修炼之路，查看自己的排</p>
+								<p class="times">2019-04-15</p>
+							</a>
+						</div>
+							<a href="#" class="u_list u_highlight">
+								<i class="list-pic"></i><span>你所不知道的城市挑战赛DOTA2大数据</span><span class="times">2019-04-15</span>
+							</a>
+							<a href="#" class="u_list">
+								<i class="list-pic"></i><span>梦幻联赛S11决赛日：VG五局拉满击败VP夺冠 锁定TI9直邀名额</span><span class="times">2019-04-15</span>
+							</a>
+							<a href="#" class="u_list u_highlight">
+								<i class="list-pic"></i><span>DOTA2 3月25日更新日志：7.21d平衡性改动</span><span class="times">2019-04-15</span>
+							</a>
+							<a href="#" class="u_list">
+								<i class="list-pic"></i><span>英雄修炼之路活动详解 TI9门票应该这样拿</span><span class="times">2019-04-15</span>
+							</a>
+							<a href="#" class="u_list u_highlight">
+								<i class="list-pic"></i><span>踏上英雄修炼之路 刀塔国际邀请赛门票等你拿</span><span class="times">2019-04-15</span>
+							</a>
+							<a href="#" class="u_list">
+								<i class="list-pic"></i><span>TI9黏土人工程师预售开始 伐木机毛绒同步发售</span><span class="times">2019-04-15</span>
+							</a>
+							<a href="#" class="u_list u_highlight">
+								<i class="list-pic"></i><span>刀塔Plus再迎升级 会员特权助你玩转DOTA2</span><span class="times">2019-04-15</span>
+							</a>
+					</li>
+				</ul>
+			</div>
+		</div>	
+		<div class="right_u_list">
+			<div class="right_u_list_hot_title">
+				<span id="hot_icons"></span><span>近期热点</span>
+			</div>
+			<div class="video"><video autoplay muted loop><source src="image/main29s.mp4" type="video/mp4" /></video></div>
+			<div class="right_u_list_bisai">
+				<div class="right_u_list_bisai_title">
+					<span id="bisai_icons"></span><span>赛事中心</span>
+					<a href="#" class="more">
+						<span>更多</span>
+						<div class="right_icons"></div>
+					</a>
+					</div>
+				<div class="imga">
+					<a href="#">
+						<img src="image/og.jpg" alt="" id="imgog">
+						<span>2018国际邀请赛</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contain_foot">
+		<div class="left_contain_foot">
+			<div class="left_contain_foot_title">
+				<span class="active_icons"></span>
+				<a ><span class="active">活动中心</span></a> 
+				<a href=""><span class="anyactive">推广活动<i></i></span></a>
+				<a href=""><span class="anyactive">赛事活动</span></a>
+				<a href=""><span class="anyactive">官方活动</span></a>
+			</div>
+			<div class="left_contain_foot_content">
+				<a href="#"><img src="image/heroroad1.jpg" alt=""><p>Ti9手办预售</p></a>
+				<a href="#"><img src="image/heroroad.jpg" alt=""><p>英雄修炼之路</p></a>
+				<a href="#"><img src="image/heroroad3.jpg" alt=""><p>2019完美世界高校联赛 春季赛</p></a>
+				<a href="#"><img src="image/heroroad4.jpg" alt=""><p>芳晓佳节</p></a>
+				<a href="#"><img src="image/heroroad5.jpg" alt=""><p>只要许下一个愿</p></a>
+				<a href="#"><img src="image/heroroad6.jpg" alt=""><p>拉比克至宝 魔导师密钥</p></a>
+			</div>
+		</div>
+		<div class="right_contain_foot">
+			<div class="banbentitle"><i class="banben"></i><span>版本更新</span>
+				<a href="#" class="more">
+					<span>更多</span>
+					<div class="right_icons"></div>
+				</a>
+			</div>
+			<div class="u_content"><img src="image/7-21.jpg" alt=""></div>
+			<div class="server">
+				<div class="server_title">
+					<i></i><span>客服中心</span>
+					<a href="#" class="more">
+						<span>更多</span>
+						<div class="right_icons"></div>
+					</a>
+				</div>
+				<div class="server_content">
+					<div><input type="text" placeholder="请输入您的问题"><span></span><button>我要提问</button></div>
+					<p>常见问题</p>
+					<div>
+						<div>
+							<div><a href=""><span></span>如何找回与DOTA2账户绑定的完美通行证？</a></div>
+							<div><a href=""><span></span>为什么我需要注册两个账号?</a></div>
+							<div><a href=""><span></span>如何注册DOTA2账号？</a></div>
+							<div><a href=""><span></span>如何绑定完美通行证（完美电竞账号）？</a></div>
+							<div><a href=""><span></span>进入客户端后【运行DOTA2】按钮无法点击，怎么办？</a></div>
+							<div><a href=""><span></span>《DOTA2》概率与结果公示信息</a></div>
+						</div>
+						<div class="moremany">展开<span></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="first-line">
+			<a href="#"><img src="image/logo-wanmei.png" alt=""></a>
+			<a href="#"><img src="image/logo-valve.png" alt=""></a>
+			<div>
+				<p>&copy;&nbsp;完美世界&nbsp;版权所有&nbsp;&nbsp;Perfect World. All Rights Reserved.</p>
+				<p>&copy;&nbsp;2012 Valve Corporation. All Rights reserved. Licensed to Beijing Perfect World Network Technology Co., Ltd. in China</p>
+			</div>
+		</div>
+		<div class="second-line">
+			<div><span>京ICP证：050016号&nbsp;<a href="#">《网络文化经营许可证》编号：京网文[2017]8929-1007号</a>&nbsp;网络视听许可证》编号：0110587</span></div>
+			<div><span>京公网安备11010502033859号 <a href="#"><img src="image/icon-gamenettag.png" alt=""> 文网进字[2013] 028号</a> 新出审字[2013] 1505号 ISBN：978-7-89989-826-0 | <a href="#">家长监护</a></span></div>
+		</div>
+		<div class="lasttext"><span>本网络游戏适合年满16岁以上的用户使用：请您确定已如实进行实名注册。为了您的健康，请合理控制游戏时间。</span></div>
+		</div>
+	</footer>
+	<script src="js/index.js" type="text/javascript"></script>
+	<script src="js/login.js" type="text/javascript"></script>
+	<script src="js/jquery-1.11.3.js"></script>
+</body>
+</html>

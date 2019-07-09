@@ -1,0 +1,309 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	vertical-align:baseline;
+}
+a{
+	text-decoration:none;
+}
+/*登录窗口*/
+#loginindex{
+	display:none;
+	width:100%;
+	height: 100%;
+	background:rgba(0,0,0,0.7);
+	position:fixed;
+	z-index:999;
+}
+#loginindex>div{
+	position:absolute;
+	top:15%;
+	left:35%;
+	background:url("../image/bg-login.jpg") no-repeat top;
+	width:365px;
+	height:516px;
+}
+#loginindex .loginput{
+	width:213px;
+	height:33px;
+	margin:20px 0px;
+	background-color:transparent;
+	border:1px solid #333;
+	outline:none;
+	color:#999;
+	position:absolute;
+	padding-left:30px;
+	padding-right:20px;
+}
+#loginindex>div>.loginname>input{
+	top:175px;
+	left:50px;
+}
+#loginindex>div>.loginupwd>input{
+	top:215px;
+	left:50px;
+	margin-top:26px;
+}
+#loginindex>div>.loginname>i{
+	display:inline-block;
+	position:absolute;
+	background:url("../image/icons-login.png");
+	background-position:-10px -45px;
+	top:203px;
+	left:58px;
+	width:15px;
+	height:17px;
+}
+#loginindex>div>.loginupwd>i{
+	display:inline-block;
+	position:absolute;
+	background:url("../image/icons-login.png");
+	background-position:-8px -83px;
+	top:250px;
+	left:57px;
+	width:15px;
+	height:17px;
+}
+#loginindex>div>a>.close{
+	display:inline-block;
+	position:absolute;
+	background:url("../image/icons-login.png");
+	background-position:-8px -120px;
+	width:15px;
+	height:17px;
+	top:15px;
+	right:17px;
+}
+#loginindex>div>.autologin>div>i{
+	display:inline-block;
+	position:absolute;
+	background:url("../image/icons-login.png");
+	background-position:-8px -161px;
+	width:15px;
+	height:17px;
+	top:300px;
+	left:49px;
+	cursor:pointer;
+}
+#loginindex>div>.autologin>#onf{	
+	display:none;
+	position:absolute;
+	background:url("../image/icons-login.png");
+	background-position:-8px -195px;
+	width:15px;
+	height:17px;
+	top:300px;
+	left:49px;
+	cursor:pointer;}
+#loginindex>div>.autologin>div>span{
+	cursor:default;
+	position:absolute;
+	color:#777;
+	top:298px;
+	left:67px;
+	font-size:12px;
+}
+#loginindex>div>.autologin>div>input{
+	position:absolute;
+	top:300px;
+	left:51px;
+	visibility:hidden;
+}
+#loginindex>div>button{
+	position:absolute;
+	width:265px;
+	height:40px;
+	background-color:#530909;
+	background-image:-webkit-linear-gradient(90deg, rgba(162, 53, 38, 0.85) 0%, rgba(184, 50, 31, 0.85) 88%, rgba(177, 73, 59, 0.85) 92%, rgba(177, 73, 59, 0.85) 100%);
+	top:330px;
+	left:51px;
+	border:none;
+	outline:none;
+	color:#fff;
+	font-size:16px;
+	border-radius:3px;
+	cursor:pointer;
+}
+#loginindex>div>button:hover{
+	box-shadow:inset 0 0 14px #ec331f;
+	background-image: -webkit-linear-gradient( 90deg, rgb(162, 53, 38) 0%, rgb(184, 50, 31) 88%, rgb(177, 73, 59) 92%, rgb(177, 73, 59) 100%);
+}
+#loginindex>div>.forget{
+	color:#777;
+	font-size:12px;
+	text-decoration:underline;
+	position:absolute;
+	top:298px;
+	right:50px;
+}
+#loginindex>div>.forget:hover{
+	color:#999;
+}
+#loginindex>div>.dotared{
+	color:#c42f1b;
+	font-size:14px;
+}
+#loginindex>div>.dotared:hover{
+	color:#ef2308;
+}
+#loginindex>div>.reg{
+	position:absolute;
+	top:408px;
+	left:110px;
+}
+#loginindex>div>.find{
+	position:absolute;
+	top:440px;
+	left:86px;
+	}
+/*导航背景*/
+header{
+	box-sizing:border-box;
+	width:100%;
+	height:80px;
+	background:url("../image/bg.png") center top no-repeat;
+	color:#827c79;
+}
+#nav{
+	box-sizing:content-box;
+	width:100%;
+	height:80px;
+	float:left;
+	display:flex;
+	flex-wrap:nowrap;
+	min-width:1200px;
+	position:relative;
+}
+/*logo背景*/
+#nav #navlogo{
+	display:block;
+	width:240px;
+	height:40px;
+	background:url("../image/logo.png") center top no-repeat;
+	margin-top:20px;
+	float:left;
+	padding:5%;
+	position:relative;
+	left:10px;
+}
+/*导航栏*/
+#nav>.dota2nav,.link_div{
+	float:left;
+}
+#nav .dota2nav{
+	position:relative;
+	text-align:center;
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content:between;
+
+}
+#nav>.dota2nav>.link_div{
+	width:78px;
+	padding:23px 7px;
+}
+#nav .s1{
+	display:block;
+}
+#nav>.dota2nav>.link_div>a{
+	color:#827c79;
+	font-size:16px;
+}
+#nav .dota2nav .link_div .s2{
+	display:block;
+	font-size:12px;
+	margin-top:2px;
+	line-height:16px;
+	transform:scale(0.75);
+	
+}
+#nav>.dota2nav>.link_div>a:hover{
+	color:#00b7f4;
+	
+}
+.link_div:hover{
+background-color:#000;
+}
+/*导航栏图标*/
+
+#dotauser{
+	float:left;
+	margin-left:20px;
+
+}
+#info{
+	position:relative;
+	top:16px;
+	display:flex;
+	flex-wrap:nowrap;
+}
+#avatars{
+	width:50px;
+	height:50px;
+	border:2px solid #262323;
+	border-radius:50%;
+	float:left;
+	top:13px;
+	left:0px;
+	background-image:url("../image/icons.png");
+	background-color:#101215;
+	background-position:13px -451px;
+}
+/*登录窗口*/
+#enter{
+	float:left;
+	width:150px;
+	margin-left:30px;
+}
+#enter>p{
+	color:#fff;
+	font-size:18px;
+}
+#enter>p>a{
+	color:#00b7f4;
+}
+#enter>p,#enter>p>a,#enter>p>span{
+	display:flex;
+	flex-wrap:nowrap;
+}
+#enter>span{
+	color:#898989;
+	line-height:1.5;
+	font-size:12px;
+}
+#enter .exit{
+	display:block;
+	position:absolute;
+	top:24px;
+	left:158px;
+}
+#enter .exit:hover{
+	color:#ddaa89;
+}
+/* 下拉菜单 */
+.link_div>div{
+	display:none;
+	position:absolute;
+	background:url("../image/data2.home.submenu.bg.png") no-repeat;
+	top:69px;
+	left:0px;
+	width:92px;
+	height:288px;
+	background-size:100%;
+	z-index: 999;
+}
+.link_div{
+	position:relative;
+}
+.link_div>div>a{
+	display:block;
+	color:#827c79;
+	font-size:15px;
+	margin-top:15px;
+
+}
+.link_div:hover>div{
+	display:block;
+
+}

@@ -1,0 +1,221 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	vertical-align:baseline;
+}
+body{
+	background:url("../image/dota-body.jpg") 50% 0px no-repeat rgb(4, 7, 8);
+	font:normal 14px/22px "Microsoft Yahei";
+	min-width:1200px
+}
+.contain{
+	position:relative;
+	height:847px;
+	min-width:1200px;
+}
+.logo>a{
+	width:118px;
+	height:37px;
+}
+.logo>a>img{
+	width:98px;
+	height:35px;
+	position:relative;
+	top:27px;
+	left:2%;
+}
+.tit{
+	position:absolute;
+	font:700 45px "Microsoft Yahei";
+	color:#fff;
+	top:70px;
+	left:38%;
+	letter-spacing:3px;
+}
+.pay>p{
+	display:block;
+	width:452px;
+	height:24px;
+	background:url("../image/vice_tit_ch.png") no-repeat;
+	position:absolute;
+	top:130px;
+	left:40%;
+}
+
+.reg_head{
+	text-align:center;
+	line-height:46px;
+	display:block;
+	color:#fff;
+	background:rgb(47, 58, 69);
+	width:226px;
+	height:46px;
+	font-size:18px;
+	text-decoration:none;
+}
+.regbody{
+	position:absolute;
+	top:170px;
+	left:34%;
+}
+.regall{
+	display:flex;
+	width:452px;
+}
+.didi{
+	position:relative;
+}
+.didi>i{
+	display:inline-block;
+	width:11px;
+	height:6px;
+	background:url("../image/rarr_b.png");
+	position:absolute;
+	top:45px;
+	left:106px;
+}
+/*注册内容栏*/
+#phoneform div,#emailform div{
+	box-sizing:border-box;
+	width:452px;
+	height:37px;
+	padding-left:10px;
+	padding-right:25px;
+	background-color:rgba(0,0,0,0.3);
+	border:1px solid #555;
+	margin:20px 0px;
+}
+#phoneform input,#emailform input{
+	width:416px;
+	height:34.8px;
+	background-color:transparent;
+	outline:none;
+	color:#dbdbdb;
+	font-size:18px;
+}
+input::-webkit-input-placeholder {
+	color:#ddd;
+	font-size:16px;
+}
+#phoneform>.readygo,#emailform>.readygo{
+	display:inline-block;
+	width:285px;
+	height:37px;
+	margin:0px;
+}
+#phoneform>.readygo>input,#emailform>.readygo>input{
+	width:249px;
+	height:34.8px;
+}
+.getyz{
+	box-sizing:border-box;
+	color:#fff;
+	font-size:16px;
+	display:inline-block;
+	width:161px;
+	height:37px;
+	text-align:center;
+	background-color:#4c5f71;
+	line-height:37px;
+	text-decoration:none;
+	border-radius:2px;
+}
+.regist{
+	display:block;
+	width:452px;
+	height:42px;
+	background-color:#a23526;
+	color:#fff;
+	border:1px solid #b94c3d;
+	outline:none;
+	font-size:20px;
+	cursor:pointer;
+}
+.regist:hover{
+	background-color:#c13825;
+	border-color:#c13825;
+}
+.had{
+	box-sizing:border-box;
+	margin:15px 0;
+	display:block;
+	width:452px;
+	height:42px;
+	background-color:transparent;
+	color:#aaa;
+	font-size:20px;
+	text-align:center;
+	line-height:42px;
+	text-decoration:none;
+	border:1px solid #555;
+}
+.had:hover{
+	color:#fff;
+	border-color:#fff;
+}
+#phoneform>span>i{
+	display:inline-block;
+	width:13px;
+	height:13px;
+	background:url("../image/rico_error.png") no-repeat;
+	position:relative;
+	top:2px;
+	left:-3px;
+}
+/*页尾*/
+.footer{
+	text-align:center;
+}
+.anynav{
+	color:#8f8f8f;
+	font-size:12px;
+}
+.anynav>a{
+	color:#8f8f8f;
+	font-size:12px;
+	margin:0 15px;
+}
+.footer>p{
+	color:#8f8f8f;
+	font-size:12px;
+}
+.footer>p>a{
+	color:#8f8f8f;
+	text-decoration:none;
+	font-size:12px;
+}
+.footer>div:last-child>a{
+	display:inline-block;
+	width:108px;
+	height:40px;
+	margin:0px 10px;
+}
+/*验证样式*/
+
+#phoneform>span,#emailform>span{
+	width:207px;
+	height:16px;
+	color:rgb(255, 89, 89);
+	position:absolute;
+	top:74px;
+	left:470px;
+}
+#phoneform>#phonepwdpd,#emailform>#emailpwdpd{
+	top:129px;
+}
+#phoneform>#phonepwdpd1,#emailform>#emailpwdpd1{
+	top:187px;
+}
+#phoneform>#phonenamepd,#emailform>#emailnamepd{
+	top:242px;
+}
+#phoneform>#phoneIDpd,#emailform>#emailIDpd{
+	top:298px;
+}
+#emailform>#phone2pd{
+	top:357px;
+}
+#emailform{
+	display:none;
+}

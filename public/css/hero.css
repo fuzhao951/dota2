@@ -1,0 +1,181 @@
+body{
+    background:url(../image/bg.jpg) center top repeat #141516;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    background-color: #141516;
+    color: #6e6e6e;
+    min-width: 1200px;
+}
+ul{
+    list-style: none;
+}
+.contain {
+    min-width: 1200px;
+}
+.contain .herotop{
+    width:100%;
+    min-width: 1200px;
+}
+.contain .herotop div{
+    display: block;
+    width:982px;
+    height:115px;
+    background:url(../image/hero_top_bg.jpg) no-repeat;
+    background-position-x: -10px;
+    position: relative;
+    margin:0px auto;
+    
+}
+.contain .herotop a{
+    width:129px;
+    height:42px;
+    display: inline-block;
+    background:url(../image/top_tab.jpg);
+    background-position:0 -42px;
+    text-decoration: none;
+    color:#c0c0c0;
+    font:normal 18px/40px "微软雅黑";
+    text-align: center;
+    position: absolute;
+    top:69px;
+}
+/*herocontain*/
+.herobody{
+    width:982px;
+    height:710px;
+    background-color: #0f0f0f;
+    margin:0px auto;
+    padding-top:35px;
+    padding-bottom: 50px;
+    font-family: "宋体","微软雅黑",Arial, Helvetica, sans-serif;
+}
+.herobody>.heroshow>.heromsg{
+    padding:0px;
+    width:926px;
+    /* height:58px; */
+    background-color: #000;
+    margin:0 auto;
+    padding:14px 6px;
+    margin-bottom: 14px;
+}
+.herobody>.heroshow>.heromsg>#hero_name{
+    color:#c0c0c0;
+    font:bold 24px/40px "微软雅黑";
+    height:41px;
+    text-align: center;
+    margin-top:15px;
+    background: url("../image/bor01.jpg") no-repeat center bottom;
+}
+#hero_roles{
+    line-height: 18px;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 2px;
+    color: #c0c0c0;
+}
+#hero_roles>span:first-child{
+    color:#fff;
+}
+.select>div:first-child{
+    text-align: center;
+    padding-bottom: 10px;
+    color: #999;
+}
+.select>div>.selector{
+    width: 150px;
+    padding: 3px;
+    font-size: 12px;
+    background: #2a2c2d;
+    border-top: 1px solid #363939;
+    border-left: 1px solid #363939;
+    border-right: 1px solid #1b1e1e;
+    border-bottom: 1px solid #1b1e1e;
+    color: #999;
+}
+/*英雄图片部分*/
+.heropic{
+    box-sizing: border-box;
+    width:870px;
+ 
+    margin:0 auto;
+    margin-top:20px;
+}
+.herolist{
+    width: 278px;
+    padding: 0 6px;
+    float: left;
+}
+.heropic>ul>li>.str{
+    color:#616363;
+    padding-left: 40px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    font-size: 16px;
+  
+}
+.heropic>ul.herolist>li:first-child{
+    text-align: center;
+}
+.heropic>ul:first-child>li>span{
+    background:url(../image/overviewicon_str.png) no-repeat 0 center;
+}
+.heropic>ul:nth-child(2)>li>span{
+    background:url(../image/overviewicon_agi.png) no-repeat 0 center;
+}
+.heropic>ul:nth-child(3)>li>span{
+    background:url(../image/overviewicon_int.png) no-repeat 0 center;
+}
+.heroimg{
+    float:left;
+    width:69px;
+    height:44px;
+    position: relative;
+}
+.heroimg>a>img{
+    width: 59px;
+    height: 33px;
+    border: 4px solid #000;
+    border-radius: 3px;
+    position: relative;
+}
+.heroimg>a>img.herohover{
+    width: 127px;
+    height: 71px;
+    border: 4px solid #fff;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 4px 4px #1C1E1E;
+    -moz-box-shadow: 0px 0px 4px 4px #1c1e1e;
+    -moz-border-radius: 3px;
+    box-shadow: 0px 0px 4px 4px #1C1E1E;
+    position: absolute;
+    top: -19px;
+    left: -34px;
+    z-index: 3;
+}
+.heroimg>a>img.d-no{
+    display: none;
+}
+.heroimg>a>img.g-no{
+    display: none;
+}
+.heroimg>a>img.a-no{
+    display: none;
+}
+.heroimg>a>img.h-no{
+    display: none;
+}
+ .heroimg>a>.gray{
+    cursor: default;
+    opacity: 0.1;
+} 
+.heroimg>a>.dang{
+    cursor: default;
+    opacity: 0.1;
+} 
+.heroimg>a>.hui{
+    cursor: default;
+    opacity: 0.1;
+} 
+
